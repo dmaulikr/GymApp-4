@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C404167F1EF1B4C5000AC3F8 /* LIneButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = C404167E1EF1B4C5000AC3F8 /* LIneButtons.swift */; };
+		C40416811EF1C238000AC3F8 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40416801EF1C238000AC3F8 /* WelcomeVC.swift */; };
+		C40416851EF1CA49000AC3F8 /* UINavigationController+Transparent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40416841EF1CA49000AC3F8 /* UINavigationController+Transparent.swift */; };
+		C40416871EF1D3F8000AC3F8 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40416861EF1D3F8000AC3F8 /* SignUpVC.swift */; };
+		C412EC591EF2ADE8009AC29A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C412EC581EF2ADE8009AC29A /* Images.xcassets */; };
 		C48647851EF156D200E12C86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48647841EF156D200E12C86 /* AppDelegate.swift */; };
-		C48647871EF156D200E12C86 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48647861EF156D200E12C86 /* ViewController.swift */; };
+		C48647871EF156D200E12C86 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48647861EF156D200E12C86 /* LoginVC.swift */; };
 		C486478A1EF156D200E12C86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C48647881EF156D200E12C86 /* Main.storyboard */; };
 		C486478D1EF156D200E12C86 /* GymApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C486478B1EF156D200E12C86 /* GymApp.xcdatamodeld */; };
-		C486478F1EF156D200E12C86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C486478E1EF156D200E12C86 /* Assets.xcassets */; };
 		C48647921EF156D200E12C86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C48647901EF156D200E12C86 /* LaunchScreen.storyboard */; };
 		C486479D1EF156D200E12C86 /* GymAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C486479C1EF156D200E12C86 /* GymAppTests.swift */; };
 		C48647A81EF156D200E12C86 /* GymAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48647A71EF156D200E12C86 /* GymAppUITests.swift */; };
+		CCBCBB5398AE41EA350B271A /* Pods_GymApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B55B5A68DF0D67B4346E4923 /* Pods_GymApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,12 +40,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		17066406864FCE98CA2583BD /* Pods-GymApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GymApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-GymApp/Pods-GymApp.release.xcconfig"; sourceTree = "<group>"; };
+		B55B5A68DF0D67B4346E4923 /* Pods_GymApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GymApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C40416741EF1B303000AC3F8 /* Rubik-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-LightItalic.ttf"; sourceTree = "<group>"; };
+		C40416751EF1B303000AC3F8 /* Rubik-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Bold.ttf"; sourceTree = "<group>"; };
+		C40416761EF1B303000AC3F8 /* Rubik-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Italic.ttf"; sourceTree = "<group>"; };
+		C40416771EF1B303000AC3F8 /* Rubik-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-MediumItalic.ttf"; sourceTree = "<group>"; };
+		C40416781EF1B304000AC3F8 /* Rubik-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-BlackItalic.ttf"; sourceTree = "<group>"; };
+		C40416791EF1B304000AC3F8 /* Rubik-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Regular.ttf"; sourceTree = "<group>"; };
+		C404167A1EF1B304000AC3F8 /* Rubik-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-BoldItalic.ttf"; sourceTree = "<group>"; };
+		C404167B1EF1B304000AC3F8 /* Rubik-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Medium.ttf"; sourceTree = "<group>"; };
+		C404167C1EF1B305000AC3F8 /* Rubik-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Light.ttf"; sourceTree = "<group>"; };
+		C404167D1EF1B305000AC3F8 /* Rubik-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Black.ttf"; sourceTree = "<group>"; };
+		C404167E1EF1B4C5000AC3F8 /* LIneButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LIneButtons.swift; sourceTree = "<group>"; };
+		C40416801EF1C238000AC3F8 /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
+		C40416841EF1CA49000AC3F8 /* UINavigationController+Transparent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Transparent.swift"; sourceTree = "<group>"; };
+		C40416861EF1D3F8000AC3F8 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		C412EC581EF2ADE8009AC29A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C48647811EF156D200E12C86 /* GymApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GymApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C48647841EF156D200E12C86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C48647861EF156D200E12C86 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C48647861EF156D200E12C86 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		C48647891EF156D200E12C86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C486478C1EF156D200E12C86 /* GymApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GymApp.xcdatamodel; sourceTree = "<group>"; };
-		C486478E1EF156D200E12C86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C48647911EF156D200E12C86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C48647931EF156D200E12C86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C48647981EF156D200E12C86 /* GymAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GymAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +70,7 @@
 		C48647A31EF156D200E12C86 /* GymAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GymAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C48647A71EF156D200E12C86 /* GymAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymAppUITests.swift; sourceTree = "<group>"; };
 		C48647A91EF156D200E12C86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C88978812DB3BA67C594CF44 /* Pods-GymApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GymApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GymApp/Pods-GymApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCBCBB5398AE41EA350B271A /* Pods_GymApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +99,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		719DCCA6F853B06A512474C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B55B5A68DF0D67B4346E4923 /* Pods_GymApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9D0DCAAB3DE470F2AD2143D5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C88978812DB3BA67C594CF44 /* Pods-GymApp.debug.xcconfig */,
+				17066406864FCE98CA2583BD /* Pods-GymApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C40416421EF1B2E0000AC3F8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C404167D1EF1B305000AC3F8 /* Rubik-Black.ttf */,
+				C40416781EF1B304000AC3F8 /* Rubik-BlackItalic.ttf */,
+				C40416751EF1B303000AC3F8 /* Rubik-Bold.ttf */,
+				C404167A1EF1B304000AC3F8 /* Rubik-BoldItalic.ttf */,
+				C40416761EF1B303000AC3F8 /* Rubik-Italic.ttf */,
+				C404167C1EF1B305000AC3F8 /* Rubik-Light.ttf */,
+				C40416741EF1B303000AC3F8 /* Rubik-LightItalic.ttf */,
+				C404167B1EF1B304000AC3F8 /* Rubik-Medium.ttf */,
+				C40416771EF1B303000AC3F8 /* Rubik-MediumItalic.ttf */,
+				C40416791EF1B304000AC3F8 /* Rubik-Regular.ttf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		C48647781EF156D200E12C86 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +140,8 @@
 				C486479B1EF156D200E12C86 /* GymAppTests */,
 				C48647A61EF156D200E12C86 /* GymAppUITests */,
 				C48647821EF156D200E12C86 /* Products */,
+				9D0DCAAB3DE470F2AD2143D5 /* Pods */,
+				719DCCA6F853B06A512474C9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,10 +158,13 @@
 		C48647831EF156D200E12C86 /* GymApp */ = {
 			isa = PBXGroup;
 			children = (
+				C40416421EF1B2E0000AC3F8 /* Resources */,
+				C48647B71EF1578600E12C86 /* Controller */,
+				C48647B61EF1577B00E12C86 /* View */,
+				C48647B51EF1577600E12C86 /* Model */,
 				C48647841EF156D200E12C86 /* AppDelegate.swift */,
-				C48647861EF156D200E12C86 /* ViewController.swift */,
 				C48647881EF156D200E12C86 /* Main.storyboard */,
-				C486478E1EF156D200E12C86 /* Assets.xcassets */,
+				C412EC581EF2ADE8009AC29A /* Images.xcassets */,
 				C48647901EF156D200E12C86 /* LaunchScreen.storyboard */,
 				C48647931EF156D200E12C86 /* Info.plist */,
 				C486478B1EF156D200E12C86 /* GymApp.xcdatamodeld */,
@@ -128,6 +190,32 @@
 			path = GymAppUITests;
 			sourceTree = "<group>";
 		};
+		C48647B51EF1577600E12C86 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C48647B61EF1577B00E12C86 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C404167E1EF1B4C5000AC3F8 /* LIneButtons.swift */,
+				C40416841EF1CA49000AC3F8 /* UINavigationController+Transparent.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C48647B71EF1578600E12C86 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C48647861EF156D200E12C86 /* LoginVC.swift */,
+				C40416801EF1C238000AC3F8 /* WelcomeVC.swift */,
+				C40416861EF1D3F8000AC3F8 /* SignUpVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +223,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C48647AC1EF156D200E12C86 /* Build configuration list for PBXNativeTarget "GymApp" */;
 			buildPhases = (
+				C41DAC301F167F4ADADC7668 /* [CP] Check Pods Manifest.lock */,
 				C486477D1EF156D200E12C86 /* Sources */,
 				C486477E1EF156D200E12C86 /* Frameworks */,
 				C486477F1EF156D200E12C86 /* Resources */,
+				2B86F6F87088A28C3B4A4798 /* [CP] Embed Pods Frameworks */,
+				F94CCDC17185AB79ACBBA43A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -196,6 +287,7 @@
 				TargetAttributes = {
 					C48647801EF156D200E12C86 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0830;
 					};
 					C48647971EF156D200E12C86 = {
 						CreatedOnToolsVersion = 9.0;
@@ -233,7 +325,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C48647921EF156D200E12C86 /* LaunchScreen.storyboard in Resources */,
-				C486478F1EF156D200E12C86 /* Assets.xcassets in Resources */,
+				C412EC591EF2ADE8009AC29A /* Images.xcassets in Resources */,
 				C486478A1EF156D200E12C86 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,13 +346,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2B86F6F87088A28C3B4A4798 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GymApp/Pods-GymApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C41DAC301F167F4ADADC7668 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F94CCDC17185AB79ACBBA43A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GymApp/Pods-GymApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C486477D1EF156D200E12C86 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C40416871EF1D3F8000AC3F8 /* SignUpVC.swift in Sources */,
+				C40416851EF1CA49000AC3F8 /* UINavigationController+Transparent.swift in Sources */,
 				C486478D1EF156D200E12C86 /* GymApp.xcdatamodeld in Sources */,
-				C48647871EF156D200E12C86 /* ViewController.swift in Sources */,
+				C40416811EF1C238000AC3F8 /* WelcomeVC.swift in Sources */,
+				C404167F1EF1B4C5000AC3F8 /* LIneButtons.swift in Sources */,
+				C48647871EF156D200E12C86 /* LoginVC.swift in Sources */,
 				C48647851EF156D200E12C86 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -362,7 +506,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -411,7 +555,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -421,28 +565,32 @@
 		};
 		C48647AD1EF156D200E12C86 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C88978812DB3BA67C594CF44 /* Pods-GymApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 629247H9W4;
 				INFOPLIST_FILE = GymApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.GymApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		C48647AE1EF156D200E12C86 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17066406864FCE98CA2583BD /* Pods-GymApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 629247H9W4;
 				INFOPLIST_FILE = GymApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.GymApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -528,6 +676,7 @@
 				C48647AE1EF156D200E12C86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C48647AF1EF156D200E12C86 /* Build configuration list for PBXNativeTarget "GymAppTests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +685,7 @@
 				C48647B11EF156D200E12C86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C48647B21EF156D200E12C86 /* Build configuration list for PBXNativeTarget "GymAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -544,6 +694,7 @@
 				C48647B41EF156D200E12C86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
