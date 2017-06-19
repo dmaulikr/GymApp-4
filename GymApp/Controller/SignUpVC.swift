@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import SwiftKeychainWrapper
 
 class SignUpVC: UIViewController {
   
@@ -16,6 +18,7 @@ class SignUpVC: UIViewController {
   @IBOutlet var passwordTextField: UITextField!
   
   var blurEffectView: UIVisualEffectView?
+  //var loginVC: LoginVC?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,19 +45,33 @@ class SignUpVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
   
-  @IBAction func cancelButtonPressed(_ sender: UIBarButtonItem) {
-    self.performSegue(withIdentifier: "unwindToViewController1", sender: self)
-  }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+  @IBAction func createAccountBtnPressed() {
+    if let email = emailTextField.text, let password = passwordTextField.text {
+      Auth.auth().createUser(withEmail: email, password: password, completion: { (user, error) in
+        if error != nil {
+          print("Unable to authenticate with Firebase")
+          let alertController = UIAlertController(title: "Nothing entered", message: "Please enter all the details above", preferredStyle: .alert)
+          let okayAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+          alertController.addAction(okayAction)
+          self.present(alertController, animated: true, completion: nil)
+        } else {
+          print("Successfullt authenticated with Firebase")
+          if let user = user {
+            let userData = ["provider": user.providerID]
+            self.completeSignInSUVC(id: user.uid, userData: userData)
+          }
+        }
+      })
     }
-    */
-
+  }
+  
+  // Had to put this method in here aswell - could no refactor. Didnt know how to reference another view controller
+  // in a closure with self. Figure out a way to refactor!!!!
+  func completeSignInSUVC(id: String, userData: Dictionary<String, String>) {
+    DataService.ds.createFirebaseDBUser(uid: id, userData: userData)
+    let keychainResult = KeychainWrapper.standard.set(id, forKey: "uid")
+    print("DAVID: Data saved to keychain \(keychainResult)")
+    self.performSegue(withIdentifier: "goToHomeScreen", sender: nil)
+  }
+  
 }

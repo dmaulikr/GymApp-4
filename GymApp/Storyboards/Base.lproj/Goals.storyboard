@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="3xx-tF-JM1">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Goals-->
+        <scene sceneID="rby-B7-jMb">
+            <objects>
+                <viewController id="qrD-sP-wLi" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="226-oC-hKl"/>
+                        <viewControllerLayoutGuide type="bottom" id="Z3i-lv-7m2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7yR-GF-7KL">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Goals" id="hIf-Hf-Nv4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="So9-w2-GwK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5343.1999999999998" y="1681.7091454272866"/>
+        </scene>
+        <!--Goals-->
+        <scene sceneID="DJH-tN-uaH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3xx-tF-JM1" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Goals" image="goals" id="bx5-7u-U1r"/>
+                    <toolbarItems/>
+                    <nil key="simulatedOrientationMetrics"/>
+                    <nil key="simulatedDestinationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="D84-fc-RFs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="qrD-sP-wLi" kind="relationship" relationship="rootViewController" id="7Qp-MJ-1CQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g4O-YQ-ltz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4439.1999999999998" y="1681.7091454272866"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="goals" width="25" height="25"/>
+    </resources>
+</document>

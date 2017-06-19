@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="hKg-Q7-MWb">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="mRg-A2-6Rf">
+            <objects>
+                <viewController id="nag-cb-hRR" customClass="HomeVC" customModule="GymApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EFh-ST-AoS"/>
+                        <viewControllerLayoutGuide type="bottom" id="2ac-J5-2qP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yRz-d7-Ulc">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Home" id="Pxy-dE-dvF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WC6-la-nGs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5004" y="180"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="EsH-cg-bXy">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hKg-Q7-MWb" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="home" id="U9E-af-NPC"/>
+                    <toolbarItems/>
+                    <nil key="simulatedOrientationMetrics"/>
+                    <nil key="simulatedDestinationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="GxU-RC-enb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="nag-cb-hRR" kind="relationship" relationship="rootViewController" id="850-jE-ROh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lKY-AC-nHk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4100" y="180"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="home" width="25" height="25"/>
+    </resources>
+</document>

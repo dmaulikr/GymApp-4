@@ -19,6 +19,24 @@
 		C48647921EF156D200E12C86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C48647901EF156D200E12C86 /* LaunchScreen.storyboard */; };
 		C486479D1EF156D200E12C86 /* GymAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C486479C1EF156D200E12C86 /* GymAppTests.swift */; };
 		C48647A81EF156D200E12C86 /* GymAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48647A71EF156D200E12C86 /* GymAppUITests.swift */; };
+		C49D95B41EF416CC00607833 /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49D95B31EF416CC00607833 /* MenuVC.swift */; };
+		C49D95B71EF439EE00607833 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49D95B61EF439EE00607833 /* DataService.swift */; };
+		C4A292771EF2E96200C7F0BE /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A292761EF2E96200C7F0BE /* HomeVC.swift */; };
+		C4A292791EF2E97B00C7F0BE /* ClassesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A292781EF2E97B00C7F0BE /* ClassesVC.swift */; };
+		C4A2927B1EF2E99600C7F0BE /* AchievementsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A2927A1EF2E99600C7F0BE /* AchievementsVC.swift */; };
+		C4A2927D1EF30CCB00C7F0BE /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A2927C1EF30CCB00C7F0BE /* ImageCell.swift */; };
+		C4A2928B1EF324C300C7F0BE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C4A2928A1EF324A600C7F0BE /* GoogleService-Info.plist */; };
+		C4A2928D1EF32E8900C7F0BE /* GoalsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A2928C1EF32E8900C7F0BE /* GoalsVC.swift */; };
+		C4C333F31EF7DD91001AE394 /* ClassInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C333F21EF7DD91001AE394 /* ClassInfo.swift */; };
+		C4C333F51EF7E932001AE394 /* ClassDetailsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C333F41EF7E932001AE394 /* ClassDetailsTVC.swift */; };
+		C4C333F71EF7EB79001AE394 /* ClassDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C333F61EF7EB79001AE394 /* ClassDetailCell.swift */; };
+		C4C333F91EF809C7001AE394 /* UploadClassTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C333F81EF809C7001AE394 /* UploadClassTVC.swift */; };
+		C4C333FC1EF80A0C001AE394 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4C333FA1EF80A0C001AE394 /* Home.storyboard */; };
+		C4C334001EF80A5F001AE394 /* Classes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4C333FE1EF80A5F001AE394 /* Classes.storyboard */; };
+		C4C334021EF80A96001AE394 /* Achievements.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4C334011EF80A96001AE394 /* Achievements.storyboard */; };
+		C4C334051EF80AC5001AE394 /* Goals.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4C334031EF80AC5001AE394 /* Goals.storyboard */; };
+		C4C334071EF80B0C001AE394 /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4C334061EF80B0C001AE394 /* Menu.storyboard */; };
+		C4C3340A1EF80B48001AE394 /* PTMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4C334081EF80B48001AE394 /* PTMenu.storyboard */; };
 		CCBCBB5398AE41EA350B271A /* Pods_GymApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B55B5A68DF0D67B4346E4923 /* Pods_GymApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +88,25 @@
 		C48647A31EF156D200E12C86 /* GymAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GymAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C48647A71EF156D200E12C86 /* GymAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymAppUITests.swift; sourceTree = "<group>"; };
 		C48647A91EF156D200E12C86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C49D95AB1EF3ED5C00607833 /* GymApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GymApp.entitlements; sourceTree = "<group>"; };
+		C49D95B31EF416CC00607833 /* MenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
+		C49D95B61EF439EE00607833 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		C4A292761EF2E96200C7F0BE /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		C4A292781EF2E97B00C7F0BE /* ClassesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassesVC.swift; sourceTree = "<group>"; };
+		C4A2927A1EF2E99600C7F0BE /* AchievementsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsVC.swift; sourceTree = "<group>"; };
+		C4A2927C1EF30CCB00C7F0BE /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
+		C4A2928A1EF324A600C7F0BE /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C4A2928C1EF32E8900C7F0BE /* GoalsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsVC.swift; sourceTree = "<group>"; };
+		C4C333F21EF7DD91001AE394 /* ClassInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassInfo.swift; sourceTree = "<group>"; };
+		C4C333F41EF7E932001AE394 /* ClassDetailsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassDetailsTVC.swift; sourceTree = "<group>"; };
+		C4C333F61EF7EB79001AE394 /* ClassDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassDetailCell.swift; sourceTree = "<group>"; };
+		C4C333F81EF809C7001AE394 /* UploadClassTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadClassTVC.swift; sourceTree = "<group>"; };
+		C4C333FB1EF80A0C001AE394 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
+		C4C333FF1EF80A5F001AE394 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Classes.storyboard; sourceTree = "<group>"; };
+		C4C334011EF80A96001AE394 /* Achievements.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Achievements.storyboard; sourceTree = "<group>"; };
+		C4C334041EF80AC5001AE394 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Goals.storyboard; sourceTree = "<group>"; };
+		C4C334061EF80B0C001AE394 /* Menu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
+		C4C334091EF80B48001AE394 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/PTMenu.storyboard; sourceTree = "<group>"; };
 		C88978812DB3BA67C594CF44 /* Pods-GymApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GymApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GymApp/Pods-GymApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -136,6 +173,7 @@
 		C48647781EF156D200E12C86 = {
 			isa = PBXGroup;
 			children = (
+				C4A2928A1EF324A600C7F0BE /* GoogleService-Info.plist */,
 				C48647831EF156D200E12C86 /* GymApp */,
 				C486479B1EF156D200E12C86 /* GymAppTests */,
 				C48647A61EF156D200E12C86 /* GymAppUITests */,
@@ -158,12 +196,14 @@
 		C48647831EF156D200E12C86 /* GymApp */ = {
 			isa = PBXGroup;
 			children = (
+				C4C333FD1EF80A23001AE394 /* Storyboards */,
+				C49D95B51EF439DF00607833 /* Services */,
+				C49D95AB1EF3ED5C00607833 /* GymApp.entitlements */,
 				C40416421EF1B2E0000AC3F8 /* Resources */,
 				C48647B71EF1578600E12C86 /* Controller */,
 				C48647B61EF1577B00E12C86 /* View */,
 				C48647B51EF1577600E12C86 /* Model */,
 				C48647841EF156D200E12C86 /* AppDelegate.swift */,
-				C48647881EF156D200E12C86 /* Main.storyboard */,
 				C412EC581EF2ADE8009AC29A /* Images.xcassets */,
 				C48647901EF156D200E12C86 /* LaunchScreen.storyboard */,
 				C48647931EF156D200E12C86 /* Info.plist */,
@@ -193,6 +233,7 @@
 		C48647B51EF1577600E12C86 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C4C333F21EF7DD91001AE394 /* ClassInfo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -202,6 +243,8 @@
 			children = (
 				C404167E1EF1B4C5000AC3F8 /* LIneButtons.swift */,
 				C40416841EF1CA49000AC3F8 /* UINavigationController+Transparent.swift */,
+				C4A2927C1EF30CCB00C7F0BE /* ImageCell.swift */,
+				C4C333F61EF7EB79001AE394 /* ClassDetailCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -212,8 +255,37 @@
 				C48647861EF156D200E12C86 /* LoginVC.swift */,
 				C40416801EF1C238000AC3F8 /* WelcomeVC.swift */,
 				C40416861EF1D3F8000AC3F8 /* SignUpVC.swift */,
+				C4A292761EF2E96200C7F0BE /* HomeVC.swift */,
+				C4A292781EF2E97B00C7F0BE /* ClassesVC.swift */,
+				C4A2927A1EF2E99600C7F0BE /* AchievementsVC.swift */,
+				C4A2928C1EF32E8900C7F0BE /* GoalsVC.swift */,
+				C49D95B31EF416CC00607833 /* MenuVC.swift */,
+				C4C333F41EF7E932001AE394 /* ClassDetailsTVC.swift */,
+				C4C333F81EF809C7001AE394 /* UploadClassTVC.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		C49D95B51EF439DF00607833 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C49D95B61EF439EE00607833 /* DataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C4C333FD1EF80A23001AE394 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C48647881EF156D200E12C86 /* Main.storyboard */,
+				C4C334081EF80B48001AE394 /* PTMenu.storyboard */,
+				C4C334061EF80B0C001AE394 /* Menu.storyboard */,
+				C4C334031EF80AC5001AE394 /* Goals.storyboard */,
+				C4C334011EF80A96001AE394 /* Achievements.storyboard */,
+				C4C333FE1EF80A5F001AE394 /* Classes.storyboard */,
+				C4C333FA1EF80A0C001AE394 /* Home.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,7 +359,12 @@
 				TargetAttributes = {
 					C48647801EF156D200E12C86 = {
 						CreatedOnToolsVersion = 9.0;
-						LastSwiftMigration = 0830;
+						LastSwiftMigration = 0900;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 					C48647971EF156D200E12C86 = {
 						CreatedOnToolsVersion = 9.0;
@@ -324,9 +401,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4A2928B1EF324C300C7F0BE /* GoogleService-Info.plist in Resources */,
+				C4C333FC1EF80A0C001AE394 /* Home.storyboard in Resources */,
 				C48647921EF156D200E12C86 /* LaunchScreen.storyboard in Resources */,
+				C4C334071EF80B0C001AE394 /* Menu.storyboard in Resources */,
 				C412EC591EF2ADE8009AC29A /* Images.xcassets in Resources */,
 				C486478A1EF156D200E12C86 /* Main.storyboard in Resources */,
+				C4C334051EF80AC5001AE394 /* Goals.storyboard in Resources */,
+				C4C3340A1EF80B48001AE394 /* PTMenu.storyboard in Resources */,
+				C4C334001EF80A5F001AE394 /* Classes.storyboard in Resources */,
+				C4C334021EF80A96001AE394 /* Achievements.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,11 +484,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				C40416871EF1D3F8000AC3F8 /* SignUpVC.swift in Sources */,
+				C49D95B71EF439EE00607833 /* DataService.swift in Sources */,
+				C4C333F31EF7DD91001AE394 /* ClassInfo.swift in Sources */,
+				C4A292771EF2E96200C7F0BE /* HomeVC.swift in Sources */,
+				C4C333F71EF7EB79001AE394 /* ClassDetailCell.swift in Sources */,
+				C4A2927D1EF30CCB00C7F0BE /* ImageCell.swift in Sources */,
+				C4A2928D1EF32E8900C7F0BE /* GoalsVC.swift in Sources */,
 				C40416851EF1CA49000AC3F8 /* UINavigationController+Transparent.swift in Sources */,
 				C486478D1EF156D200E12C86 /* GymApp.xcdatamodeld in Sources */,
+				C49D95B41EF416CC00607833 /* MenuVC.swift in Sources */,
+				C4C333F51EF7E932001AE394 /* ClassDetailsTVC.swift in Sources */,
+				C4A2927B1EF2E99600C7F0BE /* AchievementsVC.swift in Sources */,
 				C40416811EF1C238000AC3F8 /* WelcomeVC.swift in Sources */,
 				C404167F1EF1B4C5000AC3F8 /* LIneButtons.swift in Sources */,
 				C48647871EF156D200E12C86 /* LoginVC.swift in Sources */,
+				C4C333F91EF809C7001AE394 /* UploadClassTVC.swift in Sources */,
+				C4A292791EF2E97B00C7F0BE /* ClassesVC.swift in Sources */,
 				C48647851EF156D200E12C86 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -457,6 +552,38 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		C4C333FA1EF80A0C001AE394 /* Home.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4C333FB1EF80A0C001AE394 /* Base */,
+			);
+			name = Home.storyboard;
+			sourceTree = "<group>";
+		};
+		C4C333FE1EF80A5F001AE394 /* Classes.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4C333FF1EF80A5F001AE394 /* Base */,
+			);
+			name = Classes.storyboard;
+			sourceTree = "<group>";
+		};
+		C4C334031EF80AC5001AE394 /* Goals.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4C334041EF80AC5001AE394 /* Base */,
+			);
+			name = Goals.storyboard;
+			sourceTree = "<group>";
+		};
+		C4C334081EF80B48001AE394 /* PTMenu.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4C334091EF80B48001AE394 /* Base */,
+			);
+			name = PTMenu.storyboard;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -480,6 +607,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
@@ -535,6 +664,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
@@ -568,14 +699,18 @@
 			baseConfigurationReference = C88978812DB3BA67C594CF44 /* Pods-GymApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = GymApp/GymApp.entitlements;
 				DEVELOPMENT_TEAM = 629247H9W4;
 				INFOPLIST_FILE = GymApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.GymApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GymApp/SWRevealViewController/GymApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -584,14 +719,17 @@
 			baseConfigurationReference = 17066406864FCE98CA2583BD /* Pods-GymApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = GymApp/GymApp.entitlements;
 				DEVELOPMENT_TEAM = 629247H9W4;
 				INFOPLIST_FILE = GymApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.GymApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GymApp/SWRevealViewController/GymApp-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

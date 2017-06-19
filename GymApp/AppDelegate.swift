@@ -8,6 +8,10 @@
 
 import UIKit
 import CoreData
+import FBSDKLoginKit
+import Firebase
+import FBSDKCoreKit
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,10 +23,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // Override point for customization after application launch.
     
     UIApplication.shared.statusBarStyle = .lightContent
+    
+    // Navigation bar customization
     if let barFont = UIFont(name: "Avenir-Light", size: 24.0) {
-      UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white, NSFontAttributeName: barFont]
+      UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.black, NSFontAttributeName: barFont]
     }
+    
+    // Tab bar customization
+    UITabBar.appearance().tintColor = UIColor(red: 255/255, green: 224/255, blue: 102/255, alpha: 1.0)
+    UITabBar.appearance().barTintColor = UIColor(red: 80/255, green: 81/255, blue: 79/255, alpha: 1.0)
+    UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.white], for: .normal)
+    UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor(red: 255/255, green: 224/255, blue: 102/255, alpha: 1.0)], for: .selected)
+    
+    FirebaseApp.configure()
+    FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
+    
+  
     return true
+  }
+  
+  func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey: Any] = [:]) -> Bool {
+    let handled = FBSDKApplicationDelegate.sharedInstance().application(app, open: url, options: options)
+    return handled
   }
 
   func applicationWillResignActive(_ application: UIApplication) {
@@ -95,4 +117,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   }
 
 }
+
 
