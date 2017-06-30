@@ -62,7 +62,9 @@ PODS:
   - GoogleToolboxForMac/NSString+URLArguments (2.1.1)
   - GTMSessionFetcher/Core (1.1.10)
   - Protobuf (3.3.0)
+  - SCLAlertView (0.7.0)
   - SwiftKeychainWrapper (3.0.1)
+  - UICircularProgressRing (1.6.1)
 
 DEPENDENCIES:
   - Bolts
@@ -73,7 +75,9 @@ DEPENDENCIES:
   - Firebase/Database
   - Firebase/Messaging
   - Firebase/Storage
+  - SCLAlertView
   - SwiftKeychainWrapper
+  - UICircularProgressRing
 
 SPEC CHECKSUMS:
   Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
@@ -90,8 +94,10 @@ SPEC CHECKSUMS:
   GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
   GTMSessionFetcher: 30d874b96d0d76028f61fbd122801e3f030d47db
   Protobuf: d582fecf68201eac3d79ed61369ef45734394b9c
+  SCLAlertView: 8a14ffc40590c619e183eed2298b854385f30be1
   SwiftKeychainWrapper: 38952a3636320ae61bad3513cadd870929de7a4a
+  UICircularProgressRing: 99419d03525be7b4ad29c0021e0fbb7d913b0030
 
-PODFILE CHECKSUM: 0a794924aaf8fe0d5f6767b1f60691cd6948b6be
+PODFILE CHECKSUM: cdbfd7cebeeae789fa116f7ada34266eb7353113
 
 COCOAPODS: 1.1.1

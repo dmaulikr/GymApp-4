@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Lja-j0-xUg">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -16,7 +20,7 @@
             <objects>
                 <tableViewController id="s1t-UI-74F" customClass="UploadClassTVC" customModule="GymApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Tng-JS-Uus">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <sections>
@@ -246,7 +250,21 @@
                             <outlet property="delegate" destination="s1t-UI-74F" id="cXi-mE-C3b"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="r3r-jb-YgC"/>
+                    <navigationItem key="navigationItem" id="r3r-jb-YgC">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="uNy-9k-7iN">
+                            <connections>
+                                <action selector="addBtnPressed:" destination="s1t-UI-74F" id="zu6-g1-sWx"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="date" destination="NfM-yN-UMC" id="jpb-Dm-FcR"/>
+                        <outlet property="descriptionOfClass" destination="HIh-HQ-LLo" id="JdM-XO-QKt"/>
+                        <outlet property="nameOfClass" destination="geZ-97-zbI" id="8Go-0K-PGE"/>
+                        <outlet property="nameOfInstructor" destination="Mh4-MW-seJ" id="OyA-H7-Orp"/>
+                        <outlet property="numberOfSpaces" destination="A9E-f1-pOs" id="RhK-uf-Xay"/>
+                        <outlet property="time" destination="7aa-8Y-Fw3" id="jV9-iD-uct"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Vu-9F-cdh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -257,8 +275,6 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Lja-j0-xUg" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <nil key="simulatedOrientationMetrics"/>
-                    <nil key="simulatedDestinationMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="yLp-a6-tJb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

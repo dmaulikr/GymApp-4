@@ -16,21 +16,31 @@ class LoginVC: UIViewController {
   @IBOutlet var textFieldLoginEmail: UITextField!
   @IBOutlet var textFieldLoginPassword: UITextField!
   @IBOutlet var backgroundImage: UIImageView!
+  @IBOutlet var loginBtn: UIButton! 
   
- var blurEffectView: UIVisualEffectView?
-
-  override func viewDidLoad() {
-    super.viewDidLoad()
-    
+ var blurEffectView: UIVisualEffectView!
+  
+  fileprivate func setBlurEffect() {
     let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.light)
-    blurEffectView = UIVisualEffectView(effect: blurEffect)
-    blurEffectView?.frame = view.bounds
-    backgroundImage.addSubview(blurEffectView!)
+    let blurEffectView = UIVisualEffectView(effect: blurEffect)
+    blurEffectView.frame = view.bounds
+       backgroundImage.addSubview(blurEffectView)
     
+    
+  }
+  
+  fileprivate func setTextFields() {
     textFieldLoginEmail.backgroundColor = .clear
     textFieldLoginEmail.attributedPlaceholder = NSAttributedString(string: "ENTER YOUR EMAIL", attributes: [NSForegroundColorAttributeName: UIColor.white])
     textFieldLoginPassword.backgroundColor = .clear
     textFieldLoginPassword.attributedPlaceholder = NSAttributedString(string: "ENTER YOUR PASSWORD", attributes: [NSForegroundColorAttributeName: UIColor.white])
+  }
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    
+    setBlurEffect()
+    setTextFields()
     
   }
 
@@ -56,8 +66,7 @@ class LoginVC: UIViewController {
               print("This is where you need a segue to the PT-version of the app")
               self.performSegue(withIdentifier: "goToPTScreen", sender: self)
             } else {
-              let userData = ["provider": user.providerID]
-              self.completeSignIn(id: user.uid, userData: userData)
+              self.completeSignIn(id: user.uid)
             }
           }
         } else {
@@ -72,8 +81,7 @@ class LoginVC: UIViewController {
     self.performSegue(withIdentifier: "unwindToViewController1", sender: self)
   }
   
-  func completeSignIn(id: String, userData: Dictionary<String, String>) {
-    DataService.ds.createFirebaseDBUser(uid: id, userData: userData)
+  func completeSignIn(id: String) {
     let keychainResult = KeychainWrapper.standard.set(id, forKey: "uid")
     print("DAVID: Data saved to keychain \(keychainResult)")
     self.performSegue(withIdentifier: "goToHomeScreen", sender: nil)
@@ -86,6 +94,9 @@ class LoginVC: UIViewController {
     self.present(alertController, animated: true, completion: nil)
   }
   
+  @IBAction func dontHaveAnAccountButton(_ sender: Any) {
+    dismiss(animated: true, completion: nil)
+  }
 }
 
 extension LoginVC: UITextFieldDelegate {
@@ -98,6 +109,10 @@ extension LoginVC: UITextFieldDelegate {
       textField.resignFirstResponder()
     }
     return true
+  }
+  
+  override var preferredStatusBarStyle: UIStatusBarStyle {
+    return .lightContent
   }
 
 }

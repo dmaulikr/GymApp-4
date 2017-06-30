@@ -14,20 +14,22 @@ import FBSDKLoginKit
 class WelcomeVC: UIViewController {
   
   @IBOutlet var backgroundImage: UIImageView!
-    
-    
   
   var blurEffectView: UIVisualEffectView?
   var loginVC: LoginVC!
 
-    override func viewDidLoad() {
+  fileprivate func setBlurEffect() {
+    // Do any additional setup after loading the view.
+    let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.light)
+    let blurEffectView = UIVisualEffectView(effect: blurEffect)
+    blurEffectView.frame = view.bounds
+   backgroundImage.addSubview(blurEffectView)
+  }
+  
+  override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-      let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.light)
-      blurEffectView = UIVisualEffectView(effect: blurEffect)
-      blurEffectView?.frame = view.bounds
-      backgroundImage.addSubview(blurEffectView!)
+    setBlurEffect()
     }
   
   override func viewDidAppear(_ animated: Bool) {
@@ -56,7 +58,7 @@ class WelcomeVC: UIViewController {
         print("Failed to get the access token")
         return
       }
-      
+   
       let credential = FacebookAuthProvider.credential(withAccessToken: accessToken.tokenString)
       
       // Perform login by calling Firebas API
@@ -69,12 +71,15 @@ class WelcomeVC: UIViewController {
           self.present(alertController, animated: true, completion: nil)
         } else {
           if let user = user {
-            let userData = ["provider": credential.provider]
-            self.loginVC.completeSignIn(id: user.uid, userData: userData)
+            self.loginVC.completeSignIn(id: user.uid)
           }
         }
       })
     }
+  }
+  
+  override var preferredStatusBarStyle: UIStatusBarStyle {
+    return .lightContent
   }
 
 }

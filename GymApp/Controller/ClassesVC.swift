@@ -22,12 +22,10 @@ class ClassesVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
   ]
   
   var parallaxOffsetSpeed: CGFloat = 60
-  
   var cellHeight: CGFloat = 250
   
   var imageHeight: CGFloat {
     let maxOffset = (sqrt(pow(cellHeight, 2) + 4 * parallaxOffsetSpeed * self.tableView.frame.height) - cellHeight) / 2
-    
     return maxOffset + self.cellHeight
   }
   
@@ -35,7 +33,7 @@ class ClassesVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-      navigationController?.navigationBar.tintColor = .black
+    navigationController?.navigationBar.tintColor = .black
     navigationController?.hidesBarsOnTap = true
     UIApplication.shared.statusBarStyle = .lightContent
     
@@ -54,10 +52,9 @@ class ClassesVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     if let cell = tableView.dequeueReusableCell(withIdentifier: "ImageCell") as? ImageCell {
       
-      cell.configureCell(title: titles[indexPath.row], image: images[indexPath.row])
+     cell.configureCell(title: titles[indexPath.row], image: images[indexPath.row])
      cell.imageHeight.constant = imageHeight
      cell.imageTop.constant = parallaxOffset(newOffSetY: tableView.contentOffset.y, cell: cell)
-      
       return cell
     } else {
       return ImageCell()
@@ -68,7 +65,11 @@ class ClassesVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     return titles.count
   }
   
+  var valueToPass: String!
+  
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    print("You selected cell \(titles[indexPath.row])")
+    valueToPass = titles[indexPath.row]
     self.performSegue(withIdentifier: "classChosen", sender: self)
   }
   
@@ -80,12 +81,18 @@ class ClassesVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
   
   func scrollViewDidScroll(_ scrollView: UIScrollView) {
     
-    let offsetY = tableView.contentOffset.y
+    let _ = tableView.contentOffset.y
     for cell in tableView.visibleCells as! [ImageCell] {
       cell.imageTop.constant = parallaxOffset(newOffSetY: tableView.contentOffset.y, cell: cell)
     }
     
   }
   
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    if segue.identifier == "classChosen" {
+       let destinationController = segue.destination as! ClassDetailsTVC
+      destinationController.className = valueToPass
+    }
+  }
   
 }

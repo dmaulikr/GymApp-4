@@ -31,7 +31,7 @@ class ClassDetailCell: UITableViewCell {
   
   func configureCell(classDetails: ClassInfo) {
     self.classDetails = classDetails
-    self.spacesLeft.text = "\(classDetails.numberOfSpaces)"
+    self.spacesLeft.text = classDetails.numberOfSpaces
     //self.descriptionOfClass.text = class.description
     self.time.text = classDetails.time
     self.date.text = classDetails.date

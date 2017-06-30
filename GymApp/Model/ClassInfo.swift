@@ -13,36 +13,9 @@ class ClassInfo {
   private var _instructor: String!
   private var _time: String!
   private var _date: String!
-  private var _numberOfSpaces: Int!
+  private var _numberOfSpaces: String!
   private var _className: String!
-  
-  init(instructor: String, time: String, date: String, numberOfSpaces: Int) {
-    self._instructor = instructor
-    self._time = time
-    self._date = date
-    self._numberOfSpaces = numberOfSpaces
-  }
-  
-  init(className: String, classData: Dictionary<String, AnyObject>) {
-    self._className = className
-    
-    if let instructor = classData["instructor"] as? String {
-      self._instructor = instructor
-    }
-    
-    if let time = classData["time"] as? String {
-      self._time = time
-    }
-    
-    if let date = classData["date"] as? String {
-      self._date = date
-    }
-    
-    if let numberOfSpaces = classData["numberOfSpaces"] as? Int {
-      self._numberOfSpaces = numberOfSpaces
-    }
-    
-  }
+  private var _postKey: String!
   
   var instructor: String {
     return _instructor
@@ -56,7 +29,7 @@ class ClassInfo {
     return _date
   }
   
-  var numberOfSpaces: Int {
+  var numberOfSpaces: String {
     return _numberOfSpaces
   }
   
@@ -64,4 +37,72 @@ class ClassInfo {
     return _className
   }
   
+  var postKey: String {
+    return _postKey
+  }
+  
+  init(instructor: String, time: String, date: String, numberOfSpaces: String, className: String) {
+    self._instructor = instructor
+    self._time = time
+    self._date = date
+    self._numberOfSpaces = numberOfSpaces
+    self._className = className
+  }
+  
+  init(postKey: String, classData: Dictionary<String, Any>) {
+    
+   self._postKey = postKey
+    
+    if let instructor = classData["instructor"] as? String {
+      self._instructor = instructor
+    }
+    
+    if let time = classData["time"] as? String {
+      self._time = time
+    }
+    
+    if let date = classData["date"] as? String {
+      self._date = date
+    }
+    
+    if let numberOfSpaces = classData["numberOfSpaces"] as? String {
+      self._numberOfSpaces = numberOfSpaces
+    }
+    
+  }
+  
+  
+  
+  
+  
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

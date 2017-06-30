@@ -12,13 +12,17 @@
 		C40416851EF1CA49000AC3F8 /* UINavigationController+Transparent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40416841EF1CA49000AC3F8 /* UINavigationController+Transparent.swift */; };
 		C40416871EF1D3F8000AC3F8 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40416861EF1D3F8000AC3F8 /* SignUpVC.swift */; };
 		C412EC591EF2ADE8009AC29A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C412EC581EF2ADE8009AC29A /* Images.xcassets */; };
+		C46E4F0D1EFF0DFB009D1976 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E4F0C1EFF0DFB009D1976 /* CustomImageView.swift */; };
+		C46E4F111EFFE0D1009D1976 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E4F101EFFE0D1009D1976 /* Extensions.swift */; };
+		C46E4F131EFFEE7E009D1976 /* FancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E4F121EFFEE7E009D1976 /* FancyView.swift */; };
 		C48647851EF156D200E12C86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48647841EF156D200E12C86 /* AppDelegate.swift */; };
 		C48647871EF156D200E12C86 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48647861EF156D200E12C86 /* LoginVC.swift */; };
 		C486478A1EF156D200E12C86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C48647881EF156D200E12C86 /* Main.storyboard */; };
-		C486478D1EF156D200E12C86 /* GymApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C486478B1EF156D200E12C86 /* GymApp.xcdatamodeld */; };
 		C48647921EF156D200E12C86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C48647901EF156D200E12C86 /* LaunchScreen.storyboard */; };
 		C486479D1EF156D200E12C86 /* GymAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C486479C1EF156D200E12C86 /* GymAppTests.swift */; };
 		C48647A81EF156D200E12C86 /* GymAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48647A71EF156D200E12C86 /* GymAppUITests.swift */; };
+		C49C11A71F0638F1004828CA /* GoalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49C11A61F0638F1004828CA /* GoalTableViewCell.swift */; };
+		C49C11A91F064B54004828CA /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49C11A81F064B54004828CA /* Goal.swift */; };
 		C49D95B41EF416CC00607833 /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49D95B31EF416CC00607833 /* MenuVC.swift */; };
 		C49D95B71EF439EE00607833 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49D95B61EF439EE00607833 /* DataService.swift */; };
 		C4A292771EF2E96200C7F0BE /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A292761EF2E96200C7F0BE /* HomeVC.swift */; };
@@ -26,7 +30,8 @@
 		C4A2927B1EF2E99600C7F0BE /* AchievementsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A2927A1EF2E99600C7F0BE /* AchievementsVC.swift */; };
 		C4A2927D1EF30CCB00C7F0BE /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A2927C1EF30CCB00C7F0BE /* ImageCell.swift */; };
 		C4A2928B1EF324C300C7F0BE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C4A2928A1EF324A600C7F0BE /* GoogleService-Info.plist */; };
-		C4A2928D1EF32E8900C7F0BE /* GoalsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A2928C1EF32E8900C7F0BE /* GoalsVC.swift */; };
+		C4B03C181F013EB400F8F9EB /* GoalInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B03C171F013EB400F8F9EB /* GoalInfo.swift */; };
+		C4B03C221F01B3AB00F8F9EB /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4B03C211F01B3AB00F8F9EB /* GameKit.framework */; };
 		C4C333F31EF7DD91001AE394 /* ClassInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C333F21EF7DD91001AE394 /* ClassInfo.swift */; };
 		C4C333F51EF7E932001AE394 /* ClassDetailsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C333F41EF7E932001AE394 /* ClassDetailsTVC.swift */; };
 		C4C333F71EF7EB79001AE394 /* ClassDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C333F61EF7EB79001AE394 /* ClassDetailCell.swift */; };
@@ -37,6 +42,9 @@
 		C4C334051EF80AC5001AE394 /* Goals.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4C334031EF80AC5001AE394 /* Goals.storyboard */; };
 		C4C334071EF80B0C001AE394 /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4C334061EF80B0C001AE394 /* Menu.storyboard */; };
 		C4C3340A1EF80B48001AE394 /* PTMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4C334081EF80B48001AE394 /* PTMenu.storyboard */; };
+		C4CB87F01F00EC4000BDF413 /* AddGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CB87EF1F00EC4000BDF413 /* AddGoalViewController.swift */; };
+		C4CB87F21F01231B00BDF413 /* FancyView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CB87F11F01231B00BDF413 /* FancyView1.swift */; };
+		C4D9D06D1F029B0C005E9DE0 /* NewsFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D9D06C1F029B0C005E9DE0 /* NewsFeedCell.swift */; };
 		CCBCBB5398AE41EA350B271A /* Pods_GymApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B55B5A68DF0D67B4346E4923 /* Pods_GymApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -75,11 +83,13 @@
 		C40416841EF1CA49000AC3F8 /* UINavigationController+Transparent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Transparent.swift"; sourceTree = "<group>"; };
 		C40416861EF1D3F8000AC3F8 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		C412EC581EF2ADE8009AC29A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C46E4F0C1EFF0DFB009D1976 /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
+		C46E4F101EFFE0D1009D1976 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		C46E4F121EFFEE7E009D1976 /* FancyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyView.swift; sourceTree = "<group>"; };
 		C48647811EF156D200E12C86 /* GymApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GymApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C48647841EF156D200E12C86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C48647861EF156D200E12C86 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		C48647891EF156D200E12C86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C486478C1EF156D200E12C86 /* GymApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GymApp.xcdatamodel; sourceTree = "<group>"; };
 		C48647911EF156D200E12C86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C48647931EF156D200E12C86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C48647981EF156D200E12C86 /* GymAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GymAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +98,8 @@
 		C48647A31EF156D200E12C86 /* GymAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GymAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C48647A71EF156D200E12C86 /* GymAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymAppUITests.swift; sourceTree = "<group>"; };
 		C48647A91EF156D200E12C86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C49C11A61F0638F1004828CA /* GoalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalTableViewCell.swift; sourceTree = "<group>"; };
+		C49C11A81F064B54004828CA /* Goal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goal.swift; sourceTree = "<group>"; };
 		C49D95AB1EF3ED5C00607833 /* GymApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GymApp.entitlements; sourceTree = "<group>"; };
 		C49D95B31EF416CC00607833 /* MenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
 		C49D95B61EF439EE00607833 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
@@ -96,7 +108,8 @@
 		C4A2927A1EF2E99600C7F0BE /* AchievementsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsVC.swift; sourceTree = "<group>"; };
 		C4A2927C1EF30CCB00C7F0BE /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
 		C4A2928A1EF324A600C7F0BE /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		C4A2928C1EF32E8900C7F0BE /* GoalsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsVC.swift; sourceTree = "<group>"; };
+		C4B03C171F013EB400F8F9EB /* GoalInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalInfo.swift; sourceTree = "<group>"; };
+		C4B03C211F01B3AB00F8F9EB /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		C4C333F21EF7DD91001AE394 /* ClassInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassInfo.swift; sourceTree = "<group>"; };
 		C4C333F41EF7E932001AE394 /* ClassDetailsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassDetailsTVC.swift; sourceTree = "<group>"; };
 		C4C333F61EF7EB79001AE394 /* ClassDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassDetailCell.swift; sourceTree = "<group>"; };
@@ -107,6 +120,9 @@
 		C4C334041EF80AC5001AE394 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Goals.storyboard; sourceTree = "<group>"; };
 		C4C334061EF80B0C001AE394 /* Menu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
 		C4C334091EF80B48001AE394 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/PTMenu.storyboard; sourceTree = "<group>"; };
+		C4CB87EF1F00EC4000BDF413 /* AddGoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGoalViewController.swift; sourceTree = "<group>"; };
+		C4CB87F11F01231B00BDF413 /* FancyView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyView1.swift; sourceTree = "<group>"; };
+		C4D9D06C1F029B0C005E9DE0 /* NewsFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedCell.swift; sourceTree = "<group>"; };
 		C88978812DB3BA67C594CF44 /* Pods-GymApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GymApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GymApp/Pods-GymApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -116,6 +132,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCBCBB5398AE41EA350B271A /* Pods_GymApp.framework in Frameworks */,
+				C4B03C221F01B3AB00F8F9EB /* GameKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +156,7 @@
 		719DCCA6F853B06A512474C9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C4B03C211F01B3AB00F8F9EB /* GameKit.framework */,
 				B55B5A68DF0D67B4346E4923 /* Pods_GymApp.framework */,
 			);
 			name = Frameworks;
@@ -170,6 +188,15 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		C46E4F091EFF095F009D1976 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C46E4F0C1EFF0DFB009D1976 /* CustomImageView.swift */,
+				C46E4F101EFFE0D1009D1976 /* Extensions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		C48647781EF156D200E12C86 = {
 			isa = PBXGroup;
 			children = (
@@ -196,6 +223,7 @@
 		C48647831EF156D200E12C86 /* GymApp */ = {
 			isa = PBXGroup;
 			children = (
+				C46E4F091EFF095F009D1976 /* Utils */,
 				C4C333FD1EF80A23001AE394 /* Storyboards */,
 				C49D95B51EF439DF00607833 /* Services */,
 				C49D95AB1EF3ED5C00607833 /* GymApp.entitlements */,
@@ -203,11 +231,9 @@
 				C48647B71EF1578600E12C86 /* Controller */,
 				C48647B61EF1577B00E12C86 /* View */,
 				C48647B51EF1577600E12C86 /* Model */,
-				C48647841EF156D200E12C86 /* AppDelegate.swift */,
 				C412EC581EF2ADE8009AC29A /* Images.xcassets */,
 				C48647901EF156D200E12C86 /* LaunchScreen.storyboard */,
 				C48647931EF156D200E12C86 /* Info.plist */,
-				C486478B1EF156D200E12C86 /* GymApp.xcdatamodeld */,
 			);
 			path = GymApp;
 			sourceTree = "<group>";
@@ -233,7 +259,10 @@
 		C48647B51EF1577600E12C86 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C48647841EF156D200E12C86 /* AppDelegate.swift */,
 				C4C333F21EF7DD91001AE394 /* ClassInfo.swift */,
+				C4B03C171F013EB400F8F9EB /* GoalInfo.swift */,
+				C49C11A81F064B54004828CA /* Goal.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -245,6 +274,10 @@
 				C40416841EF1CA49000AC3F8 /* UINavigationController+Transparent.swift */,
 				C4A2927C1EF30CCB00C7F0BE /* ImageCell.swift */,
 				C4C333F61EF7EB79001AE394 /* ClassDetailCell.swift */,
+				C46E4F121EFFEE7E009D1976 /* FancyView.swift */,
+				C4CB87F11F01231B00BDF413 /* FancyView1.swift */,
+				C4D9D06C1F029B0C005E9DE0 /* NewsFeedCell.swift */,
+				C49C11A61F0638F1004828CA /* GoalTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -258,10 +291,10 @@
 				C4A292761EF2E96200C7F0BE /* HomeVC.swift */,
 				C4A292781EF2E97B00C7F0BE /* ClassesVC.swift */,
 				C4A2927A1EF2E99600C7F0BE /* AchievementsVC.swift */,
-				C4A2928C1EF32E8900C7F0BE /* GoalsVC.swift */,
 				C49D95B31EF416CC00607833 /* MenuVC.swift */,
 				C4C333F41EF7E932001AE394 /* ClassDetailsTVC.swift */,
 				C4C333F81EF809C7001AE394 /* UploadClassTVC.swift */,
+				C4CB87EF1F00EC4000BDF413 /* AddGoalViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -361,6 +394,9 @@
 						CreatedOnToolsVersion = 9.0;
 						LastSwiftMigration = 0900;
 						SystemCapabilities = {
+							com.apple.GameCenter = {
+								enabled = 1;
+							};
 							com.apple.Keychain = {
 								enabled = 1;
 							};
@@ -448,7 +484,7 @@
 		};
 		C41DAC301F167F4ADADC7668 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 8;
 			files = (
 			);
 			inputPaths = (
@@ -456,7 +492,7 @@
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
+			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
@@ -483,23 +519,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4CB87F21F01231B00BDF413 /* FancyView1.swift in Sources */,
+				C46E4F111EFFE0D1009D1976 /* Extensions.swift in Sources */,
 				C40416871EF1D3F8000AC3F8 /* SignUpVC.swift in Sources */,
 				C49D95B71EF439EE00607833 /* DataService.swift in Sources */,
 				C4C333F31EF7DD91001AE394 /* ClassInfo.swift in Sources */,
 				C4A292771EF2E96200C7F0BE /* HomeVC.swift in Sources */,
 				C4C333F71EF7EB79001AE394 /* ClassDetailCell.swift in Sources */,
 				C4A2927D1EF30CCB00C7F0BE /* ImageCell.swift in Sources */,
-				C4A2928D1EF32E8900C7F0BE /* GoalsVC.swift in Sources */,
+				C46E4F0D1EFF0DFB009D1976 /* CustomImageView.swift in Sources */,
 				C40416851EF1CA49000AC3F8 /* UINavigationController+Transparent.swift in Sources */,
-				C486478D1EF156D200E12C86 /* GymApp.xcdatamodeld in Sources */,
 				C49D95B41EF416CC00607833 /* MenuVC.swift in Sources */,
 				C4C333F51EF7E932001AE394 /* ClassDetailsTVC.swift in Sources */,
+				C46E4F131EFFEE7E009D1976 /* FancyView.swift in Sources */,
 				C4A2927B1EF2E99600C7F0BE /* AchievementsVC.swift in Sources */,
 				C40416811EF1C238000AC3F8 /* WelcomeVC.swift in Sources */,
+				C4B03C181F013EB400F8F9EB /* GoalInfo.swift in Sources */,
+				C49C11A71F0638F1004828CA /* GoalTableViewCell.swift in Sources */,
+				C4D9D06D1F029B0C005E9DE0 /* NewsFeedCell.swift in Sources */,
+				C49C11A91F064B54004828CA /* Goal.swift in Sources */,
 				C404167F1EF1B4C5000AC3F8 /* LIneButtons.swift in Sources */,
 				C48647871EF156D200E12C86 /* LoginVC.swift in Sources */,
 				C4C333F91EF809C7001AE394 /* UploadClassTVC.swift in Sources */,
 				C4A292791EF2E97B00C7F0BE /* ClassesVC.swift in Sources */,
+				C4CB87F01F00EC4000BDF413 /* AddGoalViewController.swift in Sources */,
 				C48647851EF156D200E12C86 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -835,19 +878,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		C486478B1EF156D200E12C86 /* GymApp.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				C486478C1EF156D200E12C86 /* GymApp.xcdatamodel */,
-			);
-			currentVersion = C486478C1EF156D200E12C86 /* GymApp.xcdatamodel */;
-			path = GymApp.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = C48647791EF156D200E12C86 /* Project object */;
 }

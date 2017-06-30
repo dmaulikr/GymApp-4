@@ -16,6 +16,8 @@ target 'GymApp' do
   pod 'FBSDKCoreKit'
   pod 'Bolts'
   pod 'SwiftKeychainWrapper'
+  pod 'UICircularProgressRing'
+  pod 'SCLAlertView'
 
 
 end

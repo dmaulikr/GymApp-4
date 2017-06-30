@@ -1,28 +1,145 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="3xx-tF-JM1">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-Medium</string>
+            <string>AvenirNext-UltraLight</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Goals-->
         <scene sceneID="rby-B7-jMb">
             <objects>
-                <viewController id="qrD-sP-wLi" sceneMemberID="viewController">
+                <viewController id="qrD-sP-wLi" customClass="AddGoalViewController" customModule="GymApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="226-oC-hKl"/>
                         <viewControllerLayoutGuide type="bottom" id="Z3i-lv-7m2"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="7yR-GF-7KL">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="150" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SXA-wF-lYm">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellId" rowHeight="150" id="XRt-0m-Xi7" customClass="GoalTableViewCell" customModule="GymApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="150"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XRt-0m-Xi7" id="ufa-8f-hCC">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="149.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VKP-WB-hEz">
+                                                    <rect key="frame" x="8" y="24" width="100" height="100"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="100" id="bX6-sp-Ziq"/>
+                                                        <constraint firstAttribute="width" constant="100" id="gbl-UI-8aB"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="labelName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mLW-yi-0ZI">
+                                                    <rect key="frame" x="116" y="24" width="241" height="31"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="31" id="Yc2-oM-7FZ"/>
+                                                        <constraint firstAttribute="width" constant="241" id="aqs-B9-SBb"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="labelDescription" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Wu-zV-WkO">
+                                                    <rect key="frame" x="116" y="64" width="197" height="60"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="60" id="AZu-Pt-EdX"/>
+                                                        <constraint firstAttribute="width" constant="197" id="M4s-eQ-xdK"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="13"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Points" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y13-Ky-Tjb">
+                                                    <rect key="frame" x="325" y="79" width="42" height="31"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="42" id="TLl-Mn-Ula"/>
+                                                        <constraint firstAttribute="height" constant="31" id="y2D-g3-lBw"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="13"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Y13-Ky-Tjb" secondAttribute="bottom" constant="31.5" id="6rM-wf-BmY"/>
+                                                <constraint firstItem="mLW-yi-0ZI" firstAttribute="leading" secondItem="VKP-WB-hEz" secondAttribute="trailing" constant="8" id="904-Vq-55H"/>
+                                                <constraint firstItem="4Wu-zV-WkO" firstAttribute="top" secondItem="mLW-yi-0ZI" secondAttribute="bottom" constant="9" id="A7c-TW-ECY"/>
+                                                <constraint firstItem="4Wu-zV-WkO" firstAttribute="leading" secondItem="VKP-WB-hEz" secondAttribute="trailing" constant="8" id="Aey-QQ-lbZ"/>
+                                                <constraint firstItem="Y13-Ky-Tjb" firstAttribute="trailing" secondItem="ufa-8f-hCC" secondAttribute="trailingMargin" id="GVt-CK-xYf"/>
+                                                <constraint firstItem="VKP-WB-hEz" firstAttribute="top" secondItem="ufa-8f-hCC" secondAttribute="topMargin" constant="16" id="R93-7K-fXE"/>
+                                                <constraint firstItem="VKP-WB-hEz" firstAttribute="leading" secondItem="ufa-8f-hCC" secondAttribute="leadingMargin" id="U55-9f-NNo"/>
+                                                <constraint firstItem="mLW-yi-0ZI" firstAttribute="top" secondItem="ufa-8f-hCC" secondAttribute="topMargin" constant="16" id="qgA-9q-91u"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="goalImageView" destination="VKP-WB-hEz" id="kyo-vU-vad"/>
+                                            <outlet property="goalNameLbl" destination="mLW-yi-0ZI" id="SIP-yn-8WE"/>
+                                            <outlet property="goalNumberOfPoints" destination="Y13-Ky-Tjb" id="q66-CD-Gfd"/>
+                                            <outlet property="goalRequirementDesc" destination="4Wu-zV-WkO" id="dh5-Ty-clN"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="SXA-wF-lYm" secondAttribute="trailing" id="GnA-Cu-n0G"/>
+                            <constraint firstItem="SXA-wF-lYm" firstAttribute="leading" secondItem="7yR-GF-7KL" secondAttribute="leading" id="bTQ-te-Cpv"/>
+                            <constraint firstItem="SXA-wF-lYm" firstAttribute="top" secondItem="226-oC-hKl" secondAttribute="bottom" id="hyx-LD-qwD"/>
+                            <constraint firstItem="Z3i-lv-7m2" firstAttribute="top" secondItem="SXA-wF-lYm" secondAttribute="bottom" id="lVO-D2-CDz"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Goals" id="hIf-Hf-Nv4"/>
+                    <navigationItem key="navigationItem" title="Goals" id="hIf-Hf-Nv4">
+                        <barButtonItem key="rightBarButtonItem" systemItem="bookmarks" id="QS7-0y-z8A">
+                            <connections>
+                                <action selector="bookmarkGoalBtnPressed:" destination="qrD-sP-wLi" id="0gy-mJ-bbz"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="bookmarkGoalBrn" destination="QS7-0y-z8A" id="loK-oZ-QvG"/>
+                        <outlet property="tableView" destination="SXA-wF-lYm" id="0bd-eY-fdo"/>
+                        <segue destination="DVN-kV-ayG" kind="show" identifier="bookMarkBtnPressed" id="TOQ-aM-61a"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="So9-w2-GwK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5343.1999999999998" y="1681.7091454272866"/>
+            <point key="canvasLocation" x="5424.8000000000002" y="1681.7091454272866"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="xEQ-oO-Qyh">
+            <objects>
+                <viewController id="DVN-kV-ayG" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WSW-lc-uKt"/>
+                        <viewControllerLayoutGuide type="bottom" id="aHe-4Z-qUG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KAL-hL-rRJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VtO-pS-eat" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6330" y="1682"/>
         </scene>
         <!--Goals-->
         <scene sceneID="DJH-tN-uaH">
@@ -30,8 +147,6 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3xx-tF-JM1" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Goals" image="goals" id="bx5-7u-U1r"/>
                     <toolbarItems/>
-                    <nil key="simulatedOrientationMetrics"/>
-                    <nil key="simulatedDestinationMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="D84-fc-RFs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

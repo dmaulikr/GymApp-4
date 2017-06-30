@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="90X-N6-B9Z">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Heavy</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Achievements-->
         <scene sceneID="Vzb-8u-KPC">
@@ -14,15 +24,105 @@
                         <viewControllerLayoutGuide type="bottom" id="kfF-TE-KAN"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="3eu-qv-rq2">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gDC-dL-5si" customClass="LineButton" customModule="GymApp" customModuleProvider="target">
+                                <rect key="frame" x="37" y="530" width="301" height="40"/>
+                                <color key="backgroundColor" red="0.94497400519999997" green="0.3734941483" blue="0.36084082719999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="jG1-eG-QYN"/>
+                                    <constraint firstAttribute="width" constant="301" id="zzt-YC-X4S"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="14"/>
+                                <color key="tintColor" red="1" green="0.99998784070000002" blue="0.99999201299999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="CHECK GAME CENTER LEADERBOARD"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="imageLeftPadding">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
+                                        <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
+                                        <color key="value" red="1" green="0.99998784070000002" blue="0.99999201299999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="leaderboardButtonPressed:" destination="jUw-3G-CuT" eventType="touchUpInside" id="nZB-le-T2m"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="emG-Ms-Q0P" customClass="LineButton" customModule="GymApp" customModuleProvider="target">
+                                <rect key="frame" x="37" y="450" width="301" height="40"/>
+                                <color key="backgroundColor" red="0.94497400519999997" green="0.3734941483" blue="0.36084082719999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="301" id="uTm-a2-RGn"/>
+                                    <constraint firstAttribute="height" constant="40" id="z26-ee-Pyj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="14"/>
+                                <color key="tintColor" red="1" green="0.99998784070000002" blue="0.99999201299999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="ADD SOME POINTS"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="imageLeftPadding">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
+                                        <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
+                                        <color key="value" red="1" green="0.99998784070000002" blue="0.99999201299999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="addScoreAndSubmitToGC:" destination="jUw-3G-CuT" eventType="touchUpInside" id="RL3-R4-RoQ"/>
+                                    <action selector="leaderboardButtonPressed:" destination="jUw-3G-CuT" eventType="touchUpInside" id="pa7-mk-jHz"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SCORE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wAo-Xw-V6U">
+                                <rect key="frame" x="159.5" y="323.5" width="55.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wAo-Xw-V6U" firstAttribute="centerY" secondItem="3eu-qv-rq2" secondAttribute="centerY" id="0U8-hY-AXW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="emG-Ms-Q0P" secondAttribute="trailing" constant="21" id="7ll-E0-asB"/>
+                            <constraint firstItem="gDC-dL-5si" firstAttribute="leading" secondItem="3eu-qv-rq2" secondAttribute="leadingMargin" constant="21" id="LvJ-yD-ZNq"/>
+                            <constraint firstItem="wAo-Xw-V6U" firstAttribute="centerX" secondItem="3eu-qv-rq2" secondAttribute="centerX" id="QZE-iG-2of"/>
+                            <constraint firstItem="kfF-TE-KAN" firstAttribute="top" secondItem="gDC-dL-5si" secondAttribute="bottom" constant="97" id="TO4-qj-QlO"/>
+                            <constraint firstItem="gDC-dL-5si" firstAttribute="top" secondItem="emG-Ms-Q0P" secondAttribute="bottom" constant="40" id="WCn-ct-RhO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gDC-dL-5si" secondAttribute="trailing" constant="21" id="ldA-Rx-a26"/>
+                            <constraint firstItem="emG-Ms-Q0P" firstAttribute="leading" secondItem="3eu-qv-rq2" secondAttribute="leadingMargin" constant="21" id="oJW-pe-a0X"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Achievements" id="D3h-As-vMq"/>
+                    <connections>
+                        <outlet property="scoreLbl" destination="wAo-Xw-V6U" id="DnB-ak-l14"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SJR-A1-wuH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5343.1999999999998" y="-544.67766116941539"/>
+            <point key="canvasLocation" x="5343.1999999999998" y="-545.57721139430294"/>
         </scene>
         <!--Achievements-->
         <scene sceneID="C6I-Pa-LUa">
@@ -30,8 +130,6 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="90X-N6-B9Z" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Achievements" image="achievements" id="vIm-Pg-vge"/>
                     <toolbarItems/>
-                    <nil key="simulatedOrientationMetrics"/>
-                    <nil key="simulatedDestinationMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="arZ-88-CWy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

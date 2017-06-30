@@ -20,7 +20,9 @@ class MenuVC: UIViewController, UITableViewDelegate,UITableViewDataSource {
     
     self.tableView.delegate = self
     self.tableView.dataSource = self
+    
   }
+  
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
@@ -39,7 +41,6 @@ class MenuVC: UIViewController, UITableViewDelegate,UITableViewDataSource {
   
   
   @IBAction func logOutPressed(_ sender: Any) {
-    print("You have touched the logout button")
     do {
       try Auth.auth().signOut()
     } catch let logOutError {
